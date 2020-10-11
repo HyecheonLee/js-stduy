@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+}
+
+.tetris-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/bg.jpg");
+  background-size: contain;
+  overflow: hidden;
+}
+
+.tetris {
+  display: flex;
+  align-items: flex-start;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.stage {
+  display: grid;
+  grid-template-rows: repeat(20, calc(40vw / 12));
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1px;
+  border: 2px solid #333;
+  width: 100%;
+  max-width: 40vw;
+  background: #111;
+  opacity: 0.8;
+}
+
+aside {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  padding: 0 20px;
+}
+
+.display {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  border: 4px solid #333;
+  min-height: 30px;
+  width: 100%;
+  border-radius: 20px;
+  color: #999;
+  background: #000;
+  font-size: 0.8rem;
+}
+
+.display.gameOver {
+  color: red;
+}
+
+.cell {
+  width: auto;
+  background: rgba(0, 0, 0, .8);
+  border: 4px solid rgba(0, 0, 0, 1);
+  border-bottom-color: rgba(0, 0, 0, .1);
+  border-left-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.start-button {
+  box-sizing: border-box;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background: #333;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.cell-colorI {
+  background: rgb(80, 227, 230);
+  border: 4px solid rgba(80, 227, 230, 1);
+  border-bottom-color: rgba(80, 227, 230, .1);
+  border-left-color: rgba(80, 227, 230, 0.3);
+}
+
+.cell-colorJ {
+  background: rgb(36, 95, 223);
+  border: 4px solid rgba(36, 95, 223, 1);
+  border-bottom-color: rgba(36, 95, 223, .1);
+  border-left-color: rgba(36, 95, 223, 0.3);
+}
+
+.cell-colorL {
+  background: rgb(223, 173, 36);
+  border: 4px solid rgba(223, 173, 36, 1);
+  border-bottom-color: rgba(223, 173, 36, .1);
+  border-left-color: rgba(223, 173, 36, 0.3);
+}
+
+.cell-colorO {
+  background: rgb(223, 217, 36);
+  border: 4px solid rgba(223, 217, 36, 1);
+  border-bottom-color: rgba(223, 217, 36, .1);
+  border-left-color: rgba(223, 217, 36, 0.3);
+}
+
+.cell-colorS {
+  background: rgb(48, 211, 56);
+  border: 4px solid rgba(48, 211, 56, 1);
+  border-bottom-color: rgba(48, 211, 56, .1);
+  border-left-color: rgba(48, 211, 56, 0.3);
+}
+
+.cell-colorT {
+  background: rgb(132, 61, 198);
+  border: 4px solid rgba(132, 61, 198, 1);
+  border-bottom-color: rgba(132, 61, 198, .1);
+  border-left-color: rgba(132, 61, 198, 0.3);
+}
+
+.cell-colorZ {
+  background: rgb(227, 78, 78);
+  border: 4px solid rgba(227, 78, 78, 1);
+  border-bottom-color: rgba(227, 78, 78, .1);
+  border-left-color: rgba(227, 78, 78, 0.3);
+}
